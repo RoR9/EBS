@@ -20,7 +20,8 @@
   },
   "scripts": {
     "serve:client": "react-scripts start",
-    "serve:server": "node ./server"
+    "serve:server": "node ./server",
+    "serve:both":"concurrently \"yarn serve:client\" \"yarn serve:server\""
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -53,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
   }
 }

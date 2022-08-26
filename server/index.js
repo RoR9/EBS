@@ -18,3 +18,5 @@ app.get('/api/product/categories/', function (req, res) {
 });
 
 app.listen(3001, () => console.log('Server successfully started on port 3001!'));
+
+
